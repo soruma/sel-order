@@ -29,7 +29,7 @@ class ProductTableCol: NSObject {
     }
     
     static func getImage(product: Product) -> UIImage {
-        let urlStr = ProgramResources.serverUrlConnection(urlString: product.imageUrl)
+        let urlStr = AppConf.APIEndpoint() + product.imageUrl
         let url = URL(string: urlStr)!
         let imageData = try? Data(contentsOf: url)
         return UIImage(data: imageData!)!

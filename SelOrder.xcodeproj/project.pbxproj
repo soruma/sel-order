@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		215657374BB0305C3F76104F /* Pods_SelOrderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CF80286E42B62AC469F126 /* Pods_SelOrderUITests.framework */; };
-		5D17F2961FF79F7D0027C673 /* ProgramResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2951FF79F7D0027C673 /* ProgramResources.swift */; };
 		5D17F2AE1FF8AD3E0027C673 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2AD1FF8AD3E0027C673 /* Order.swift */; };
 		5D17F2B01FF8B9170027C673 /* ProductImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2AF1FF8B9170027C673 /* ProductImage.swift */; };
+		5D17F2BE1FF93BD70027C673 /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D17F2BD1FF93BD70027C673 /* Configurations.plist */; };
+		5D17F2C01FF93C970027C673 /* AppConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2BF1FF93C970027C673 /* AppConf.swift */; };
 		9396BDC97C1139CF2D43F61A /* Pods_SelOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C59FCED2EF80EADFBECB72 /* Pods_SelOrder.framework */; };
 		BFA8FE351A5E99141D4909CF /* Pods_SelOrderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B970030B75EFE804FD68738A /* Pods_SelOrderTests.framework */; };
 		C5CB0E6E1FE2C099005BF564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB0E6D1FE2C099005BF564 /* AppDelegate.swift */; };
@@ -48,11 +49,14 @@
 /* Begin PBXFileReference section */
 		060A766759975CC15D16E1FE /* Pods-SelOrder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrder.release.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrder/Pods-SelOrder.release.xcconfig"; sourceTree = "<group>"; };
 		154AD35D457E7F390056FB19 /* Pods-SelOrderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderTests/Pods-SelOrderTests.release.xcconfig"; sourceTree = "<group>"; };
+		3BDFD05F6CFA699232207F24 /* Pods-SelOrder.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrder.development.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrder/Pods-SelOrder.development.xcconfig"; sourceTree = "<group>"; };
 		59CF80286E42B62AC469F126 /* Pods_SelOrderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelOrderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D17F2951FF79F7D0027C673 /* ProgramResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramResources.swift; sourceTree = "<group>"; };
 		5D17F2AD1FF8AD3E0027C673 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		5D17F2AF1FF8B9170027C673 /* ProductImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImage.swift; sourceTree = "<group>"; };
+		5D17F2BD1FF93BD70027C673 /* Configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
+		5D17F2BF1FF93C970027C673 /* AppConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConf.swift; sourceTree = "<group>"; };
 		6E8688A5278710556EBB5514 /* Pods-SelOrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderTests/Pods-SelOrderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		79C557695FE4A904893697C2 /* Pods-SelOrderTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderTests.development.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderTests/Pods-SelOrderTests.development.xcconfig"; sourceTree = "<group>"; };
 		AC4E7E15D6A9A83212BDFFDB /* Pods-SelOrderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderUITests/Pods-SelOrderUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6A3C831A2DB2BF27F6DB880 /* Pods-SelOrder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrder.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrder/Pods-SelOrder.debug.xcconfig"; sourceTree = "<group>"; };
 		B970030B75EFE804FD68738A /* Pods_SelOrderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelOrderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,7 @@
 		C5E879301FE6649600B259A7 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		CD8FD39362127C6C0E17777D /* Pods-SelOrderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderUITests/Pods-SelOrderUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F8C59FCED2EF80EADFBECB72 /* Pods_SelOrder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelOrder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6641FBE237422BE8F3460A /* Pods-SelOrderUITests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderUITests.development.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderUITests/Pods-SelOrderUITests.development.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,9 @@
 				154AD35D457E7F390056FB19 /* Pods-SelOrderTests.release.xcconfig */,
 				AC4E7E15D6A9A83212BDFFDB /* Pods-SelOrderUITests.debug.xcconfig */,
 				CD8FD39362127C6C0E17777D /* Pods-SelOrderUITests.release.xcconfig */,
+				3BDFD05F6CFA699232207F24 /* Pods-SelOrder.development.xcconfig */,
+				79C557695FE4A904893697C2 /* Pods-SelOrderTests.development.xcconfig */,
+				FE6641FBE237422BE8F3460A /* Pods-SelOrderUITests.development.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -169,14 +177,15 @@
 				5D17F2AC1FF8ACEB0027C673 /* Definition */,
 				C5CB0E9E1FE5EB44005BF564 /* Resources */,
 				C5CB0E6D1FE2C099005BF564 /* AppDelegate.swift */,
+				5D17F2BF1FF93C970027C673 /* AppConf.swift */,
 				C5E8792E1FE6638100B259A7 /* RamenCollectionViewController.swift */,
 				C5CB0EA61FE60E13005BF564 /* DrinkTableViewController.swift */,
 				C5CB0E731FE2C099005BF564 /* Main.storyboard */,
 				C5E879301FE6649600B259A7 /* MenuCollectionViewCell.swift */,
-				5D17F2951FF79F7D0027C673 /* ProgramResources.swift */,
 				C5CB0E761FE2C09A005BF564 /* Assets.xcassets */,
 				C5CB0E781FE2C09A005BF564 /* LaunchScreen.storyboard */,
 				C5CB0E7B1FE2C09A005BF564 /* Info.plist */,
+				5D17F2BD1FF93BD70027C673 /* Configurations.plist */,
 			);
 			path = SelOrder;
 			sourceTree = "<group>";
@@ -335,6 +344,7 @@
 				C5CB0EA21FE5EB6F005BF564 /* circle-up.png in Resources */,
 				C5CB0EA11FE5EB6F005BF564 /* circle-down.png in Resources */,
 				C5CB0E7A1FE2C09A005BF564 /* LaunchScreen.storyboard in Resources */,
+				5D17F2BE1FF93BD70027C673 /* Configurations.plist in Resources */,
 				C5CB0E771FE2C09A005BF564 /* Assets.xcassets in Resources */,
 				C5CB0E751FE2C099005BF564 /* Main.storyboard in Resources */,
 			);
@@ -365,12 +375,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SelOrder/Pods-SelOrder-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/SwiftHTTP/SwiftHTTP.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftHTTP.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -514,10 +522,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5CB0E6E1FE2C099005BF564 /* AppDelegate.swift in Sources */,
+				5D17F2C01FF93C970027C673 /* AppConf.swift in Sources */,
 				C5CB0EA71FE60E13005BF564 /* DrinkTableViewController.swift in Sources */,
 				5D17F2AE1FF8AD3E0027C673 /* Order.swift in Sources */,
 				C5E879311FE6649600B259A7 /* MenuCollectionViewCell.swift in Sources */,
-				5D17F2961FF79F7D0027C673 /* ProgramResources.swift in Sources */,
 				C5CB0EAF1FE63856005BF564 /* Product.swift in Sources */,
 				C5E8792F1FE6638100B259A7 /* RamenCollectionViewController.swift in Sources */,
 				C5CB0EB11FE63A81005BF564 /* OrderDetail.swift in Sources */,
@@ -576,6 +584,111 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5D17F2B91FF93B590027C673 /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Development;
+		};
+		5D17F2BA1FF93B590027C673 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BDFD05F6CFA699232207F24 /* Pods-SelOrder.development.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SelOrder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.dip.soruma.SelOrder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		5D17F2BB1FF93B590027C673 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C557695FE4A904893697C2 /* Pods-SelOrderTests.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SelOrderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.dip.soruma.SelOrderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SelOrder.app/SelOrder";
+			};
+			name = Development;
+		};
+		5D17F2BC1FF93B590027C673 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6641FBE237422BE8F3460A /* Pods-SelOrderUITests.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SelOrderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.dip.soruma.SelOrderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SelOrder;
+			};
+			name = Development;
+		};
 		C5CB0E921FE2C09A005BF564 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -786,6 +899,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5CB0E921FE2C09A005BF564 /* Debug */,
+				5D17F2B91FF93B590027C673 /* Development */,
 				C5CB0E931FE2C09A005BF564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -795,6 +909,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5CB0E951FE2C09A005BF564 /* Debug */,
+				5D17F2BA1FF93B590027C673 /* Development */,
 				C5CB0E961FE2C09A005BF564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -804,6 +919,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5CB0E981FE2C09A005BF564 /* Debug */,
+				5D17F2BB1FF93B590027C673 /* Development */,
 				C5CB0E991FE2C09A005BF564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -813,6 +929,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5CB0E9B1FE2C09A005BF564 /* Debug */,
+				5D17F2BC1FF93B590027C673 /* Development */,
 				C5CB0E9C1FE2C09A005BF564 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

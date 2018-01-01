@@ -34,7 +34,6 @@ class RamenCollectionViewController: UICollectionViewController {
         let menuCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MenuCollectionViewCell
         let productCol = collectionData[indexPath.row]
         menuCell.setCell(productTableCol: productCol)
-        print(productCol.product.name)
         return menuCell
     }
     
@@ -49,7 +48,7 @@ class RamenCollectionViewController: UICollectionViewController {
     
     func setInitData() {
         DispatchQueue.global(qos: .default).async {
-            let url = ProgramResources.serverUrlConnection(urlString: "/products")
+            let url = AppConf.APIEndpoint() + "/products"
             HTTP.GET(url, parameters: nil) { response in
                 if let err = response.error {
                     print("error: \(err.localizedDescription)")
