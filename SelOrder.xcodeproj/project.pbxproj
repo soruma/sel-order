@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		215657374BB0305C3F76104F /* Pods_SelOrderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59CF80286E42B62AC469F126 /* Pods_SelOrderUITests.framework */; };
 		5D17F2AE1FF8AD3E0027C673 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2AD1FF8AD3E0027C673 /* Order.swift */; };
-		5D17F2B01FF8B9170027C673 /* ProductImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2AF1FF8B9170027C673 /* ProductImage.swift */; };
+		5D17F2B01FF8B9170027C673 /* ProductTableCol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2AF1FF8B9170027C673 /* ProductTableCol.swift */; };
 		5D17F2BE1FF93BD70027C673 /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D17F2BD1FF93BD70027C673 /* Configurations.plist */; };
 		5D17F2C01FF93C970027C673 /* AppConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2BF1FF93C970027C673 /* AppConf.swift */; };
 		9396BDC97C1139CF2D43F61A /* Pods_SelOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C59FCED2EF80EADFBECB72 /* Pods_SelOrder.framework */; };
@@ -52,7 +52,7 @@
 		3BDFD05F6CFA699232207F24 /* Pods-SelOrder.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrder.development.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrder/Pods-SelOrder.development.xcconfig"; sourceTree = "<group>"; };
 		59CF80286E42B62AC469F126 /* Pods_SelOrderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SelOrderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D17F2AD1FF8AD3E0027C673 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		5D17F2AF1FF8B9170027C673 /* ProductImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImage.swift; sourceTree = "<group>"; };
+		5D17F2AF1FF8B9170027C673 /* ProductTableCol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableCol.swift; sourceTree = "<group>"; };
 		5D17F2BD1FF93BD70027C673 /* Configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
 		5D17F2BF1FF93C970027C673 /* AppConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConf.swift; sourceTree = "<group>"; };
 		6E8688A5278710556EBB5514 /* Pods-SelOrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderTests/Pods-SelOrderTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				C5CB0EAE1FE63856005BF564 /* Product.swift */,
 				C5CB0EB01FE63A81005BF564 /* OrderDetail.swift */,
 				5D17F2AD1FF8AD3E0027C673 /* Order.swift */,
-				5D17F2AF1FF8B9170027C673 /* ProductImage.swift */,
+				5D17F2AF1FF8B9170027C673 /* ProductTableCol.swift */,
 			);
 			path = Definition;
 			sourceTree = "<group>";
@@ -529,7 +529,7 @@
 				C5CB0EAF1FE63856005BF564 /* Product.swift in Sources */,
 				C5E8792F1FE6638100B259A7 /* RamenCollectionViewController.swift in Sources */,
 				C5CB0EB11FE63A81005BF564 /* OrderDetail.swift in Sources */,
-				5D17F2B01FF8B9170027C673 /* ProductImage.swift in Sources */,
+				5D17F2B01FF8B9170027C673 /* ProductTableCol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

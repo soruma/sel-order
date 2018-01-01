@@ -1,5 +1,5 @@
 //
-//  ProductImage.swift
+//  ProductTableCol.swift
 //  SelOrder
 //
 //  Created by soruma.net on 12/31/17.
