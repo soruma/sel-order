@@ -12,6 +12,7 @@
 		5D17F2B01FF8B9170027C673 /* ProductTableCol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2AF1FF8B9170027C673 /* ProductTableCol.swift */; };
 		5D17F2BE1FF93BD70027C673 /* Configurations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5D17F2BD1FF93BD70027C673 /* Configurations.plist */; };
 		5D17F2C01FF93C970027C673 /* AppConf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2BF1FF93C970027C673 /* AppConf.swift */; };
+		5D17F2C21FFA4AD80027C673 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D17F2C11FFA4AD80027C673 /* OrderTableViewController.swift */; };
 		9396BDC97C1139CF2D43F61A /* Pods_SelOrder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C59FCED2EF80EADFBECB72 /* Pods_SelOrder.framework */; };
 		BFA8FE351A5E99141D4909CF /* Pods_SelOrderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B970030B75EFE804FD68738A /* Pods_SelOrderTests.framework */; };
 		C5CB0E6E1FE2C099005BF564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CB0E6D1FE2C099005BF564 /* AppDelegate.swift */; };
@@ -55,6 +56,7 @@
 		5D17F2AF1FF8B9170027C673 /* ProductTableCol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableCol.swift; sourceTree = "<group>"; };
 		5D17F2BD1FF93BD70027C673 /* Configurations.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configurations.plist; sourceTree = "<group>"; };
 		5D17F2BF1FF93C970027C673 /* AppConf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConf.swift; sourceTree = "<group>"; };
+		5D17F2C11FFA4AD80027C673 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		6E8688A5278710556EBB5514 /* Pods-SelOrderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderTests/Pods-SelOrderTests.debug.xcconfig"; sourceTree = "<group>"; };
 		79C557695FE4A904893697C2 /* Pods-SelOrderTests.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderTests.development.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderTests/Pods-SelOrderTests.development.xcconfig"; sourceTree = "<group>"; };
 		AC4E7E15D6A9A83212BDFFDB /* Pods-SelOrderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SelOrderUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SelOrderUITests/Pods-SelOrderUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				C5E8792E1FE6638100B259A7 /* RamenCollectionViewController.swift */,
 				C5CB0EA61FE60E13005BF564 /* DrinkTableViewController.swift */,
 				C5CB0E731FE2C099005BF564 /* Main.storyboard */,
+				5D17F2C11FFA4AD80027C673 /* OrderTableViewController.swift */,
 				C5E879301FE6649600B259A7 /* MenuCollectionViewCell.swift */,
 				C5CB0E761FE2C09A005BF564 /* Assets.xcassets */,
 				C5CB0E781FE2C09A005BF564 /* LaunchScreen.storyboard */,
@@ -527,6 +530,7 @@
 				5D17F2AE1FF8AD3E0027C673 /* Order.swift in Sources */,
 				C5E879311FE6649600B259A7 /* MenuCollectionViewCell.swift in Sources */,
 				C5CB0EAF1FE63856005BF564 /* Product.swift in Sources */,
+				5D17F2C21FFA4AD80027C673 /* OrderTableViewController.swift in Sources */,
 				C5E8792F1FE6638100B259A7 /* RamenCollectionViewController.swift in Sources */,
 				C5CB0EB11FE63A81005BF564 /* OrderDetail.swift in Sources */,
 				5D17F2B01FF8B9170027C673 /* ProductTableCol.swift in Sources */,

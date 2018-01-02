@@ -16,7 +16,7 @@ struct Product: Codable {
     /**
      料理ID
      */
-    var productId: Int
+    var id: Int
     
     /**
      料理名
@@ -34,7 +34,7 @@ struct Product: Codable {
     var imageUrl: String
     
     enum CodingKeys: String, CodingKey {
-        case productId = "id"
+        case id
         case name
         case imageUrl = "image_url"
         case price

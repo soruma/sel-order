@@ -13,6 +13,8 @@ private let reuseIdentifier = "Cell"
 
 class RamenCollectionViewController: UICollectionViewController {
 
+    var products = Dictionary<Int, Product>()
+    var orderDetails = [OrderDetail]()
     var collectionData = [ProductTableCol]()
     
     override func viewDidLoad() {
@@ -22,7 +24,24 @@ class RamenCollectionViewController: UICollectionViewController {
         
         setInitData()
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toOrderTable" {
+            orderDetails = [OrderDetail]()
+            let orderTableViewController = segue.destination as! OrderTableViewController
+            collectionData.forEach{(productTableCol) in
+                if productTableCol.orderNum > 0 {
+                    let orderDetail = OrderDetail(orderId: 0,
+                                                  productId: productTableCol.product.id,
+                                                  orderNum: productTableCol.orderNum)
+                    orderDetails.append(orderDetail)
+                }
+            }
+            orderTableViewController.orderDetails = orderDetails
+            orderTableViewController.products = products
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -30,7 +49,6 @@ class RamenCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-        
         let menuCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MenuCollectionViewCell
         let productCol = collectionData[indexPath.row]
         menuCell.setCell(productTableCol: productCol)
@@ -48,17 +66,20 @@ class RamenCollectionViewController: UICollectionViewController {
     
     func setInitData() {
         DispatchQueue.global(qos: .default).async {
-            let url = AppConf.APIEndpoint() + "/products"
+            let url = AppConf.APIEndpoint() + "/products/menu/ramen"
             HTTP.GET(url, parameters: nil) { response in
                 if let err = response.error {
                     print("error: \(err.localizedDescription)")
                     return
                 }
-                let products: [Product] = try! JSONDecoder().decode([Product].self, from: response.data)
-
+                let productsBuf = try! JSONDecoder().decode([Product].self, from: response.data)
+                productsBuf.forEach {(product) in
+                    self.products[product.id] = product
+                }
+                
                 DispatchQueue.main.async {
-                    products.forEach {(product) in
-                        self.collectionData.append(ProductTableCol(product: product))
+                    self.products.forEach {(product) in
+                        self.collectionData.append(ProductTableCol(product: product.value))
                     }
                     self.collectionView?.reloadData()
                 }
@@ -76,5 +97,4 @@ class RamenCollectionViewController: UICollectionViewController {
         let cell = sender.superview?.superview as! MenuCollectionViewCell
         cell.sub()
     }
-    
 }

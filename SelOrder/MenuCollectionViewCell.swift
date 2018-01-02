@@ -10,15 +10,15 @@ import UIKit
 
 class MenuCollectionViewCell: UICollectionViewCell {
     
+    var productTableCol: ProductTableCol!
+    
     @IBOutlet weak var productImageView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var numberOfOrdersLabel: UILabel!
 
-    // 最大値
     let maximum = 10
-    // 最大値
     let minimum = 0
     
     override init(frame: CGRect){
@@ -29,6 +29,7 @@ class MenuCollectionViewCell: UICollectionViewCell {
     }
     
     func setCell(productTableCol: ProductTableCol) {
+        self.productTableCol = productTableCol
         self.nameLabel.text = productTableCol.product.name
         self.productImageView.image = productTableCol.image
         self.numberOfOrdersLabel.text = productTableCol.orderNum.description
@@ -41,6 +42,7 @@ class MenuCollectionViewCell: UICollectionViewCell {
             num = maximum
         }
         numberOfOrdersLabel.text = String(num)
+        productTableCol.orderNum = num
     }
     
     func sub() {
@@ -50,6 +52,6 @@ class MenuCollectionViewCell: UICollectionViewCell {
             num = minimum
         }
         numberOfOrdersLabel.text = String(num)
+        productTableCol.orderNum = num
     }
-    
 }
