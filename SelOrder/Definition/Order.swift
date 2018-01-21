@@ -15,7 +15,7 @@ struct Order: Codable {
     /**
      注文ID
      */
-    var orderId: Int
+    var id: Int
  
     /**
      卓ID
@@ -28,7 +28,7 @@ struct Order: Codable {
     var orderDetails: [OrderDetail]
     
     enum CodingKeys: String, CodingKey {
-        case orderId = "id"
+        case id
         case tableNum = "table_num"
         case orderDetails
     }
