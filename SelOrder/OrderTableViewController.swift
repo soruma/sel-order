@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftHTTP
 
 private let reuseIdentifier = "Cell"
 
@@ -50,7 +51,7 @@ class OrderTableViewController: UITableViewController {
         
         // OK
         let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action: UIAlertAction!) -> Void in
-            print("OK")
+            self.passingOrder()
         })
         
         // cancel
@@ -61,5 +62,66 @@ class OrderTableViewController: UITableViewController {
         
         // alert display
         present(alert, animated: true, completion: nil)
+    }
+    
+    func passingOrder() {
+        let url = AppConf.APIEndpoint() + "/orders"
+        
+        let url4 = URL(string: url)!
+        let session4 = URLSession.shared
+        let request = NSMutableURLRequest(url: url4)
+        
+        request.httpMethod = "POST"
+        request.cachePolicy = NSURLRequest.CachePolicy.reloadIgnoringCacheData
+        
+        let order = Order(id: 0, tableNum: 1, orderDetails: orderDetails)
+        
+        request.httpBody = try! JSONEncoder().encode(order)
+        
+        let task = session4.dataTask(with: request as URLRequest) { (data, response, error) in
+            guard let _: Data = data, let _: URLResponse = response, error == nil else {
+                print("*****error")
+                return
+            }
+            let dataString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            print("*****This is the data 4: \(String(describing: dataString))") //JSONSerialization
+        }
+        task.resume()
+        
+        
+        
+        
+        /*
+        // TODO: tableNum
+        let order = Order(id: 0, tableNum: 1, orderDetails: orderDetails)
+       
+        let orderParam = try! JSONEncoder().encode(order)
+        JSONSerialization.s
+        DispatchQueue.global(qos: .default).async {
+            let url = AppConf.APIEndpoint() + "/orders"
+            HTTP.POST(url, parameters: order as? HTTPParameterProtocol,requestSerializer: JSONSerialization() as! HTTPSerializeProtocol) { response in
+                
+                if let err = response.error {
+                    print("error: \(err.localizedDescription)")
+                    return
+                } else {
+                    // success
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+                
+            }
+            */
+            /*
+            HTTP.POST(url, parameters: orderParam as! HTTPParameterProtocol) { response in
+                if let err = response.error {
+                    print("error: \(err.localizedDescription)")
+                    return
+                } else {
+                    // success
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+            }
+ */
+        //}
     }
 }

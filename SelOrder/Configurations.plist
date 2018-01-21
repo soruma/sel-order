@@ -15,7 +15,7 @@
 	<key>Development</key>
 	<dict>
 		<key>APIEndpoint</key>
-		<string>http://192.168.11.11:3000</string>
+		<string>http://192.168.1.102:3000</string>
 	</dict>
 </dict>
 </plist>
